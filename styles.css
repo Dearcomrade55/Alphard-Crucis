@@ -1,0 +1,273 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+body.light-mode {
+    background: #ffffff;
+    color: #333;
+}
+body.dark-mode {
+    background: #121212;
+    color: #f9f9f9;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.theme-toggle i {
+    font-size: 24px;
+    color: #ff6f00;
+}
+
+/* Top Section */
+header {
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    padding: 10px 20px;
+    border-bottom: 2px solid #0288d1;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #0288d1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #01579b;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+.content-slider {
+    font-size: 24px;
+    font-weight: bold;
+}
+.typewrite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff !important; /* Force white color */
+}
+
+
+
+
+/* Services Section */
+.services-section {
+    background: #f1f8e9;
+    padding: 60px 20px;
+}
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.service {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.service:hover {
+    transform: translateY(-10px);
+}
+
+/* Industries Section */
+.industries-section {
+    padding: 60px 20px;
+}
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* Technologies Section */
+.technologies-section {
+    background: #e1f5fe;
+    padding: 60px 20px;
+}
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.tech-logos img {
+    max-width: 60px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+.contact-info a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #1e90ff;
+}
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+.contact-form form input, .contact-form form textarea, .contact-form form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.contact-form form button {
+    background: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.contact-form form button:hover {
+    background: #007acc;
+}
+.location {
+    margin-top: 20px;
+    text-align: center;
+}
+.location i {
+    font-size: 1.5rem;
+    color: #1e90ff;
+    margin-right: 10px;
+}
+.location a {
+    font-size: 1.2rem;
+    color: #1e90ff;
+    text-decoration: none;
+}
+.location a:hover {
+    text-decoration: underline;
+}
+/* About Us Section (White Theme) */
+.about-section {
+    padding: 50px 20px;
+    background: #ffffff; /* White background */
+    color: #000000; /* Black text for contrast */
+    text-align: center;
+    border: 1px solid #ddd; /* Optional subtle border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0a0b0bf0; /* Blue for the heading to stand out */
+}
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.about-content p {
+    margin-bottom: 15px;
+}
+.typewrite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #07a209f7; /* Slightly darker blue for the typewrite effect */
+}
+/* Logo Styling */
+.logo img {
+    width: 70px; /* Adjust size as needed */
+    height: 70px; /* Make height equal to width for a perfect circle */
+    border-radius: 700%; /* Makes the logo round */
+    object-fit: cover; /* Ensures the image scales well inside the circle */
+    border: 2px solid #0d0e0ee8; /* Optional: Adds a border for styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+/* Logo Container */
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Stylish Company Name */
+.brand-name {
+    font-family: 'Poppins', sans-serif; /* Replace with your desired font */
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: 700; /* Makes the text bold */
+    color: #121213; /* Stylish blue color */
+    letter-spacing: 2px; /* Adds spacing between letters for elegance */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for a 3D effect */
+    margin-top: 10px;
+}
+
+/* Add hover effect (Optional) */
+.brand-name:hover {
+    color: #007acc; /* Darker blue on hover */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Enhances shadow on hover */
+    transition: all 0.3s ease-in-out;
+}
