@@ -44,8 +44,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-
 .navbar ul {
     list-style: none;
     display: flex;
@@ -80,9 +78,6 @@ header {
     font-weight: bold;
     color: #ffffff !important; /* Force white color */
 }
-
-
-
 
 /* Services Section */
 .services-section {
@@ -138,6 +133,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 /* Contact Section */
 .contact-section {
     padding: 50px 20px;
@@ -211,6 +207,7 @@ footer {
 .location a:hover {
     text-decoration: underline;
 }
+
 /* About Us Section (White Theme) */
 .about-section {
     padding: 50px 20px;
@@ -239,35 +236,67 @@ footer {
     font-weight: bold;
     color: #07a209f7; /* Slightly darker blue for the typewrite effect */
 }
-/* Logo Styling */
-.logo img {
-    width: 70px; /* Adjust size as needed */
-    height: 70px; /* Make height equal to width for a perfect circle */
-    border-radius: 700%; /* Makes the logo round */
-    object-fit: cover; /* Ensures the image scales well inside the circle */
-    border: 2px solid #0d0e0ee8; /* Optional: Adds a border for styling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
-}
-/* Logo Container */
-.logo {
-    text-align: center;
-    margin: 20px 0;
-}
 
-/* Stylish Company Name */
-.brand-name {
-    font-family: 'Poppins', sans-serif; /* Replace with your desired font */
-    font-size: 2.5rem; /* Adjust size as needed */
-    font-weight: 700; /* Makes the text bold */
-    color: #121213; /* Stylish blue color */
-    letter-spacing: 2px; /* Adds spacing between letters for elegance */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for a 3D effect */
-    margin-top: 10px;
-}
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Top Section */
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-/* Add hover effect (Optional) */
-.brand-name:hover {
-    color: #007acc; /* Darker blue on hover */
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Enhances shadow on hover */
-    transition: all 0.3s ease-in-out;
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .content-slider {
+        font-size: 20px;
+    }
+
+    /* Services Section */
+    .services-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Industries Section */
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Technologies Section */
+    .tech-logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    /* About Section */
+    .about-content {
+        font-size: 1rem;
+    }
+
+    .contact-info, .contact-form {
+        min-width: 100%;
+        flex: 1;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
 }
