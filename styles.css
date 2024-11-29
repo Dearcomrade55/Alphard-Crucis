@@ -1,0 +1,341 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar */
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    color: #333;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Titles */
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  /* General Section Styling */
+.section {
+  padding: 60px 20px;
+}
+
+#about {
+  background-color: #f8f9fa;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #555;
+}
+
+/* Styling for Auto-Typing Text */
+#about .auto-typing,
+#about .auto-typing-2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  min-height: 1.5em; /* Prevent layout shifts during typing */
+}
+
+  
+  /* Services */
+  #services .col-md-4 {
+    padding: 20px 10px;
+  }
+  
+  #services i {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Industries */
+  #industries .col-md-3 {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  #industries h3 {
+    font-size: 1.2rem;
+  }
+  /* Technologies Section */
+.technologies {
+  text-align: center;
+  padding: 40px;
+}
+
+.technologies h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.technology {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  width: 120px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.technology:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.technology i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* Icon Colors */
+.technology:nth-child(1) i { color: #306998; } /* Python */
+.technology:nth-child(2) i { color: #f89820; } /* Java */
+.technology:nth-child(3) i { color: #fa7343; } /* Swift */
+.technology:nth-child(4) i { color: #e34f26; } /* HTML */
+.technology:nth-child(5) i { color: #1572b6; } /* CSS */
+.technology:nth-child(6) i { color: #f7df1e; } /* JavaScript */
+.technology:nth-child(7) i { color: #61dafb; } /* React */
+.technology:nth-child(8) i { color: #8993be; } /* PHP */
+.technology:nth-child(9) i { color: #092e20; } /* Django */
+.technology:nth-child(10) i { color: #47c1bf; } /* Flutter */
+.technology:nth-child(11) i { color: #cc342d; } /* Ruby */
+
+.technology p {
+  font-size: 1rem;
+  margin: 10px 0 0;
+  color: #333;
+}
+
+
+  
+  /* Contact */
+  #contactForm .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  #contactForm .btn {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  #contactForm .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    #services .col-md-4 {
+      margin-bottom: 20px;
+    }
+  
+    #industries .col-md-3 {
+      margin: 10px 0;
+    }
+  }
+  /* Prevent jumping action by setting a fixed height */
+#about .auto-typing,
+#about .auto-typing-2 {
+  font-size: 1.2rem;
+  line-height: 1.5; /* Consistent line height */
+  min-height: 1.5em; /* Ensures a stable container size */
+  display: inline-block; /* Keeps the text inline */
+  overflow: hidden; /* Avoids content overflow during typing */
+}
+/* Styling for the auto-typing text */
+#about .auto-typing {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color */
+  line-height: 1.5;
+  min-height: 1.5em;
+  display: inline-block;
+}
+
+  /* Styling for the auto-typing text */
+#about .auto-typing {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color */
+  line-height: 1.5;
+  min-height: 1.5em;
+  display: inline-block;
+}
+
+/* Container for robot animation */
+.robot-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  animation: moveRobot 10s linear infinite; /* Animation to make robot move */
+}
+
+/* Robot icon styling */
+.robot {
+  width: 50px; /* Set the size of the robot */
+  animation: moveRobot 10s linear infinite; /* Make the robot move back and forth */
+}
+
+/* Keyframe for robot walking animation */
+@keyframes moveRobot {
+  0% {
+    transform: translateX(0); /* Start at initial position */
+  }
+  50% {
+    transform: translateX(300px); /* Move to the right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the initial position */
+  }
+}
+/* Static Robot Icon */
+.robot-icon {
+  font-size: 50px;
+  position: fixed;
+  top: 50px; /* Adjust the position as needed */
+  left: 50px; /* Adjust the position as needed */
+  z-index: 9999; /* Ensures it stays on top */
+  color: #4CAF50; /* Static color for the icon */
+  /* Remove any animation or movement */
+  animation: none;
+}
+
+/* You can add hover effect if you want the icon to change color on hover */
+.robot-icon:hover {
+  color: #FF5722;
+}
+/* Style for About Us Section */
+#aos-item {
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Styling the Robot Image */
+.robot-image {
+  margin-top: 30px; /* Add space above the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styling */
+.robot-image img {
+  width: 150px; /* Set your desired size */
+  height: auto;
+  border-radius: 10px; /* Optional: adds rounded corners to the image */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect (Optional) */
+.robot-image img:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+/* Clients Section Styling */
+#clients {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Styling for Client Logos */
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each Client Logo */
+.client-logo {
+  perspective: 1000px; /* 3D perspective */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.client-logo i {
+  font-size: 50px; /* Icon size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover */
+}
+
+.client-logo p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #555; /* Text color */
+}
+
+/* Hover 3D Effect on Icons */
+.client-logo:hover i {
+  transform: rotateY(360deg); /* Rotate the icon 360 degrees */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+/* AOS Animation for Smooth Scroll Appearance */
+.aos-item {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aos-item.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
